@@ -1,0 +1,24 @@
+# SSRF Basic - Access to Local Server
+
+## Writeup
+
+Neste laboratório, explorei uma vulnerabilidade de SSRF (Server-Side Request Forgery) em uma funcionalidade de verificação de estoque da aplicação.
+
+Ao utilizar a função "Check stock", interceptei a requisição com o Burp Suite e identifiquei o parâmetro `stockApi`, que define a URL que o servidor irá acessar para buscar as informações de estoque.
+
+Percebi que esse parâmetro era totalmente controlado pelo cliente, então modifiquei o valor da URL para `http://localhost/admin`, com o objetivo de testar acesso a recursos internos da aplicação.
+
+Como resultado, o servidor realizou a requisição internamente e retornou a página administrativa, que normalmente não estaria acessível externamente.
+
+Ao analisar o conteúdo retornado, identifiquei um endpoint sensível de exclusão de usuário (`/admin/delete?username=carlos`), o que demonstra como a SSRF pode ser utilizada para mapear e acessar recursos internos da aplicação.
+
+## Resultado
+
+Consegui explorar a SSRF com sucesso, acessando uma área administrativa interna da aplicação e identificando um endpoint crítico que poderia ser usado para ações destrutivas.
+
+## Conclusão
+
+A vulnerabilidade ocorre devido à falta de validação no parâmetro `stockApi`, permitindo que o servidor realize requisições arbitrárias para URLs controladas pelo usuário.
+
+
+
