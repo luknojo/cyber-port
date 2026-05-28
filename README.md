@@ -1,6 +1,6 @@
 # Cybersecurity Portfolio
 
-Hi, I'm João Lucas, an aspiring cybersecurity professional focused on web pentesting and offensive security.
+Hi, I'm Luk, an aspiring cybersecurity professional focused on web pentesting and offensive security.
 
 ## Areas of Interest
 - Web Application Security
