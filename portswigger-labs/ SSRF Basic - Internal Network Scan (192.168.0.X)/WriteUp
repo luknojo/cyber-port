@@ -1,0 +1,23 @@
+# SSRF Basic - Internal Network Scan (192.168.0.X)
+
+## Writeup
+
+Neste laboratório, explorei uma vulnerabilidade de SSRF (Server-Side Request Forgery) em uma funcionalidade de verificação de estoque que realiza requisições para um sistema interno.
+
+Ao utilizar a função "Check stock", interceptei a requisição com o Burp Suite e identifiquei o parâmetro `stockApi`, responsável por definir a URL que o servidor acessa internamente.
+
+Inicialmente, testei o acesso direto a endpoints internos e percebi que a aplicação podia realizar requisições para hosts da rede privada.
+
+Com isso, utilizei a ferramenta Burp Intruder para automatizar a variação do último octeto do IP na faixa `192.168.0.1` até `192.168.0.255`, visando encontrar um host interno exposto.
+
+Durante a enumeração, identifiquei que o endereço `192.168.0.1:8080/admin` retornava status 200, indicando a presença de um painel administrativo acessível internamente.
+
+Em seguida, enviei a requisição encontrada para o Burp Repeater e alterei o caminho para `/admin/delete?username=carlos`, explorando a funcionalidade administrativa.
+
+## Resultado
+
+Consegui identificar um serviço interno na rede da aplicação através de SSRF e acessar um painel administrativo oculto. A partir disso, foi possível executar uma ação sensível de exclusão de usuário.
+
+## Conclusão
+
+A vulnerabilidade permite exploração de SSRF para varredura de rede interna e descoberta de serviços não expostos publicamente, podendo levar a comprometimento crítico do sistema.
