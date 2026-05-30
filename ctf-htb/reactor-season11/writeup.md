@@ -207,4 +207,5 @@ Even when individual vulnerabilities appear manageable, combining:
 can lead to full system compromise.
 
 Reducing attack surface, enforcing least privilege, and disabling unnecessary debugging functionality are critical measures for preventing similar attack chains.
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/edd08480-0d3f-432a-93aa-13629b577297" />
+<img width="1245" height="567" alt="image" src="https://github.com/user-attachments/assets/d3845da7-ae30-4015-a933-ec9691223916" />
+
