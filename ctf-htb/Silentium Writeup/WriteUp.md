@@ -27,7 +27,7 @@ Domains: silentium.htb / staging.silentium.htb
 
 Initial port scan:
 
-```bash
+``bash
 nmap -sC -sV 10.129.21.246
 Open ports:
 22/tcp – OpenSSH
@@ -135,3 +135,6 @@ Silentium demonstrates a full attack chain:
 Web vulnerability → Account takeover → API abuse → RCE → Internal pivot → Root
 
 A realistic scenario showing how multiple low/medium severity issues can combine into full system compromise.
+
+<img width="1097" height="572" alt="image" src="https://github.com/user-attachments/assets/3eaa7033-2834-4d36-b079-30a1d5cc9b62" />
+
