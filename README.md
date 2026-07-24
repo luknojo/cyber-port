@@ -1,44 +1,75 @@
-# Cybersecurity Portfolio
+# CyberPort
 
-Hi, I'm Luk, an aspiring cybersecurity professional focused on web pentesting and offensive security.
+Welcome to **CyberPort**, my personal cybersecurity portfolio.
 
-## Areas of Interest
+I'm **Luk**, a cybersecurity student with a strong interest in **Web Application Security**, **Penetration Testing**, and **Offensive Security**. This repository documents my hands-on learning journey through labs, machines, projects, and research.
+
+---
+
+## Focus Areas
+
 - Web Application Security
 - Penetration Testing
 - Vulnerability Assessment
 - Network Security
+- Linux
+- Offensive Security
+
+---
 
 ## Platforms
+
 - Hack The Box
+- HTB Academy
 - PortSwigger Web Security Academy
+
+---
 
 ## Repository Structure
 
-### web-pentest
-Web security concepts, notes and vulnerability studies.
+### HTB Writeups
+Writeups and methodologies from Hack The Box machines.
 
-### portswigger-labs
-Writeups and notes from PortSwigger Web Security Academy labs.
+### PortSwigger Labs
+Notes and writeups from PortSwigger Web Security Academy.
 
-### htb-writeups
-Hack The Box machine writeups and methodologies.
+### Web Pentest
+Notes, methodologies, vulnerability research, and web security concepts.
 
-## Current Goals
-- Improve practical pentesting skills
-- Build a strong cybersecurity portfolio
-- Land a cybersecurity internship/junior
-
-## Skills
-- Linux basics
-- Web Pentesting fundamentals
-- Burp Suite
-- Networking basics
-- Basic enumeration
-
-## Certifications / Courses
-- HackerSec
-- Cisco Introduction to Cybersecurity
-- eJPT studies
+### Projects
+Personal cybersecurity-related projects and tools.
 
 ---
-This repository is part of my cybersecurity learning journey.
+
+## Current Goals
+
+- Complete the HTB Academy Pentester Path
+- Earn the CPTS certification
+- Obtain the OSCP certification
+- Continue building a practical cybersecurity portfolio
+- Start my professional career in offensive security
+
+---
+
+## Technical Skills
+
+- Linux
+- Burp Suite
+- Nmap
+- Basic Enumeration
+- Networking Fundamentals
+- Web Application Testing
+- HTTP & Web Technologies
+
+---
+
+## Certifications & Training
+
+- HackerSec
+- Cisco Introduction to Cybersecurity
+- eJPT (In Progress)
+- HTB Academy (In Progress)
+
+---
+
+> This repository represents my continuous learning journey in cybersecurity. Every writeup, project, and note reflects practical experience gained through labs, challenges, and real-world learning.
